@@ -52,11 +52,16 @@ a:hover {
     width: 170px;
     line-height: var(--height);
     border: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.8rem;
     text-align: center;
     background: #5d3bee;
     color: #fdfdfd;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .section-heading {
@@ -181,4 +186,252 @@ header {
     display: flex;
     align-items: center;
     column-gap: 15px;
+}
+
+.hero__client {
+    margin-top: 100px;
+    background: #fff;
+}
+
+.hero__sub-heading {
+    position: relative;
+    width: 253px;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1.68px;
+}
+
+.hero__sub-heading::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 86px;
+    height: 2px;
+    background: #5d3bee;
+    top: 20px;
+    left: -99px;
+}
+
+.client-col {
+    margin-left: auto;
+    max-width: 168px;
+    display: flex;
+    align-items: center;
+    row-gap: 34px;
+    flex-wrap: wrap;
+}
+
+.hero__client-link {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.hero__client-link span {
+    color: #080415;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.client__img {
+    border-radius: 50%;
+}
+
+.warner__img {
+    background: #fbfaff;
+    padding: 9.5px 11px;
+}
+
+.mailchimp__img {
+    background: #fee101;
+    padding: 5px;
+}
+
+.adobe__img {
+    background: #f00;
+    padding: 7.5px;
+}
+.upwork__img {
+    background: #14a800;
+    padding: 5px;
+}
+.cloud__img {
+    background: #fff;
+    padding: 7px;
+}
+.woocommerce__img {
+    background: #7f54b3;
+    padding: 5px;
+}
+
+/* Work */
+.work {
+    margin-top: 133px;
+    background: #fff;
+}
+
+.work__desc {
+    display: flex;
+    align-items: center;
+    width: 534px;
+    margin: 20px auto;
+}
+
+.work__heading,
+.work__desc {
+    text-align: center;
+}
+
+.work__item {
+    margin-top: 60px;
+    padding: 32px 42px;
+}
+
+.work__thumb {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.work__item-heading {
+    margin: 22px 0 15px;
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.work__item-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+/* Project */
+.project {
+    margin-top: 140px;
+    background: #5d3bee;
+    padding-bottom: 86px;
+}
+
+.project__inner {
+    margin-top: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__heading {
+    width: 468px;
+    color: #fff;
+}
+
+.project__desc {
+    display: flex;
+    width: 370px;
+    color: #fff;
+    margin-right: 172px;
+    opacity: 0.7;
+}
+
+.project__item {
+    margin-top: 70px;
+    background: #fbfaff;
+    padding: 24px 23px 23px 34px;
+    display: flex;
+    align-items: center;
+}
+
+.project__item-shift {
+    margin-top: 30px;
+}
+
+.project__item-heading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.project__item-desc {
+    margin: 10px 0 20px;
+    color: #51586a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.44;
+}
+
+.project__link {
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+}
+
+.project-btn {
+    margin-top: 80px;
+    color: #080415;
+    background: #fff;
+}
+
+/* About */
+.about {
+    margin-top: 140px;
+}
+
+.about__inner {
+    text-align: center;
+}
+
+.about__staff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__staff-info {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    margin: 0 9px 10px 0;
+}
+
+.about__desc {
+    width: 570px;
+    margin: 15px auto 0 auto;
+}
+
+.about__experience {
+    margin-top: 90px;
+}
+
+.about__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 190px;
+}
+
+.about__experience-number {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration-line: underline;
+}
+
+.about__experience-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
 }
