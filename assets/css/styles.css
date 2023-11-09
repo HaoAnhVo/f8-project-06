@@ -557,8 +557,8 @@ header {
 }
 
 .question__item {
-    width: 1010px;
     position: relative;
+    width: 1010px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
@@ -566,6 +566,7 @@ header {
 }
 
 .question__text {
+    margin-top: 27px;
     color: #080415;
     font-size: 3.2rem;
     font-weight: 500;
@@ -586,24 +587,120 @@ header {
     transition: 0.5s ease;
 }
 
-.question__item + .question__item::after {
-    content: "";
+.question__separate {
     display: inline-block;
     position: absolute;
     width: 1009px;
     height: 1px;
     background: #08182f;
-    top: -15px;
+    top: 96px;
     left: 0;
+    transition: translate 0.25s ease;
 }
 
-.answer-checkbox:checked ~ .answer {
+.answer-checkbox-1,
+.answer-checkbox-2,
+.answer-checkbox-3,
+.answer-checkbox-4,
+.answer-checkbox-5 {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+}
+
+.question__content input {
+    display: none;
+}
+
+.question__content span {
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    width: 14.5px;
+    height: 1.8px;
+    background: #000;
+    transform-origin: center center;
+    scale: 1;
+    opacity: 1;
+    transition: 0.25s ease;
+}
+
+.question__content span:nth-of-type(2) {
+    rotate: 90deg;
+}
+
+.answer-checkbox-1 div,
+.answer-checkbox-2 div,
+.answer-checkbox-3 div,
+.answer-checkbox-4 div,
+.answer-checkbox-5 div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #d0d1d2;
+}
+
+.answer-checkbox-1:checked ~ .answer,
+.answer-checkbox-2:checked ~ .answer,
+.answer-checkbox-3:checked ~ .answer,
+.answer-checkbox-4:checked ~ .answer,
+.answer-checkbox-5:checked ~ .answer {
     opacity: 1;
     scale: 1;
     visibility: visible;
 }
 
-.answer-checkbox:checked ~ .question__text {
+.answer-checkbox-1:checked ~ .question__text,
+.answer-checkbox-2:checked ~ .question__text,
+.answer-checkbox-3:checked ~ .question__text,
+.answer-checkbox-4:checked ~ .question__text,
+.answer-checkbox-5:checked ~ .question__text {
     color: #5d3bee;
     translate: 0 -20px;
+}
+
+.question__content input:checked ~ span:nth-of-type(1) {
+    background: #5d3bee;
+}
+
+.question__content input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+    scale: 0;
+}
+
+.question__content input:checked ~ .question__separate {
+    translate: 0 70px;
+}
+
+/* Atmosphere */
+.atmos {
+    margin-top: 160px;
+}
+
+.atmos__inner {
+    text-align: center;
+}
+
+.atmos__desc {
+    width: 528px;
+    margin: 20px auto 30px;
+}
+
+.atmos__link {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.atmos__media {
+    margin-top: 70px;
+}
+
+.atmos__thumb {
+    width: 100%;
+    height: 529px;
+    object-fit: cover;
 }
