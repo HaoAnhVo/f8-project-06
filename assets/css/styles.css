@@ -101,10 +101,6 @@ header {
     gap: 21px;
 }
 
-.email-img {
-    position: relative;
-}
-
 .email::after {
     content: "";
     position: absolute;
@@ -150,6 +146,10 @@ header {
 
 .hero__inner {
     position: relative;
+}
+
+.hero__media {
+    display: flex;
 }
 
 .hero__img {
@@ -225,7 +225,6 @@ header {
     font-size: 4.2rem;
     font-weight: 500;
     line-height: 1.12;
-    letter-spacing: -1.68px;
 }
 
 .hero__sub-heading::before {
@@ -240,13 +239,9 @@ header {
 }
 
 .client-col {
-    /* margin-left: auto; */
-    /* max-width: 168px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* row-gap: 34px; */
-    /* flex-wrap: wrap; */
 }
 
 .hero__client-link {
@@ -281,14 +276,17 @@ header {
     background: #f00;
     padding: 7.5px;
 }
+
 .upwork__img {
     background: #14a800;
     padding: 5px;
 }
+
 .cloud__img {
     background: #fff;
     padding: 7px;
 }
+
 .woocommerce__img {
     background: #7f54b3;
     padding: 5px;
