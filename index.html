@@ -258,7 +258,7 @@
                 <div class="hero__client">
                     <div class="row">
                         <div
-                            class="col col-lg-3 offset-lg-1 col-md-12 offset-md-5"
+                            class="col col-lg-3 offset-lg-1 col-md-12 offset-md-4 col-12 offset-2"
                         >
                             <h2 class="hero__sub-heading">
                                 Meet my recent clients
@@ -266,7 +266,7 @@
                         </div>
 
                         <!-- Column 1 -->
-                        <div class="col col-lg-8 col-md-6">
+                        <div class="col col-lg-8 col-md-6 col-6">
                             <div class="client-col">
                                 <a href="#!" class="hero__client-link">
                                     <img
@@ -307,7 +307,7 @@
                         </div>
 
                         <!-- Column 3 -->
-                        <div class="col col-lg-8 offset-lg-4 col-md-6">
+                        <div class="col col-lg-8 offset-lg-4 col-md-6 col-6">
                             <div class="client-col">
                                 <a href="#!" class="hero__client-link">
                                     <img
@@ -371,63 +371,95 @@
                         </div>
                     </div>
 
-                    <div class="row row-cols-lg-3 row-cols-1">
-                        <div class="col">
-                            <section class="work__item">
-                                <a href="#!" class="work__item-link">
-                                    <img
-                                        src="./assets/icon/work-img-1.svg"
-                                        alt=""
-                                        class="work__thumb"
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="work__inner">
+                                <div class="work__list">
+                                    <input
+                                        type="radio"
+                                        name="dot"
+                                        id="dot-1"
+                                        class="dot-1"
+                                        checked
                                     />
-                                    <h3 class="work__item-heading">
-                                        Product design
-                                    </h3>
-                                    <p class="work__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </a>
-                            </section>
-                        </div>
-                        <div class="col">
-                            <section class="work__item">
-                                <a href="#!" class="work__item-link">
-                                    <img
-                                        src="./assets/icon/work-img-2.svg"
-                                        alt=""
-                                        class="work__thumb"
+                                    <input
+                                        type="radio"
+                                        name="dot"
+                                        id="dot-2"
+                                        class="dot-2"
                                     />
-                                    <h3 class="work__item-heading">
-                                        UI/UX Design
-                                    </h3>
-                                    <p class="work__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </a>
-                            </section>
-                        </div>
-                        <div class="col">
-                            <section class="work__item">
-                                <a href="#!" class="work__item-link">
-                                    <img
-                                        src="./assets/icon/work-img-3.svg"
-                                        alt=""
-                                        class="work__thumb"
+                                    <input
+                                        type="radio"
+                                        name="dot"
+                                        id="dot-3"
+                                        class="dot-3"
                                     />
-                                    <h3 class="work__item-heading">
-                                        Interactive design
-                                    </h3>
-                                    <p class="work__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </a>
-                            </section>
+                                    <article class="work__item">
+                                        <a href="#!" class="work__item-link">
+                                            <img
+                                                src="./assets/icon/work-img-1.svg"
+                                                alt=""
+                                                class="work__thumb"
+                                            />
+                                            <h3 class="work__item-heading">
+                                                Product design
+                                            </h3>
+                                            <p class="work__item-desc">
+                                                Lorem ipsum dolor sit amet,
+                                                solor adipiscing elit. Non nisl
+                                                solor ut elementum turpis.
+                                            </p>
+                                        </a>
+                                    </article>
+
+                                    <article class="work__item">
+                                        <a href="#!" class="work__item-link">
+                                            <img
+                                                src="./assets/icon/work-img-2.svg"
+                                                alt=""
+                                                class="work__thumb"
+                                            />
+                                            <h3 class="work__item-heading">
+                                                UI/UX Design
+                                            </h3>
+                                            <p class="work__item-desc">
+                                                Lorem ipsum dolor sit amet,
+                                                solor adipiscing elit. Non nisl
+                                                solor ut elementum turpis.
+                                            </p>
+                                        </a>
+                                    </article>
+
+                                    <article class="work__item">
+                                        <a href="#!" class="work__item-link">
+                                            <img
+                                                src="./assets/icon/work-img-3.svg"
+                                                alt=""
+                                                class="work__thumb"
+                                            />
+                                            <h3 class="work__item-heading">
+                                                Interactive design
+                                            </h3>
+                                            <p class="work__item-desc">
+                                                Lorem ipsum dolor sit amet,
+                                                solor adipiscing elit. Non nisl
+                                                solor ut elementum turpis.
+                                            </p>
+                                        </a>
+                                    </article>
+                                    <div
+                                        class="dot-active work__dot-active hide-on-pc"
+                                    ></div>
+                                </div>
+                                <div class="feedback__dots hide-on-pc">
+                                    <label for="dot-1" class="feedback__dot">
+                                    </label>
+                                    <label for="dot-2" class="feedback__dot">
+                                    </label>
+                                    <label for="dot-3" class="feedback__dot">
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1050,8 +1082,8 @@
                 </section>
             </main>
 
-            <!-- Footer -->
-            <footer class="footer">
+            <!-- PC Footer -->
+            <footer class="footer hide-on_mobile">
                 <div class="header__inner">
                     <!-- Mail to us -->
                     <div class="email">
@@ -1102,6 +1134,45 @@
                             >Terms of Conditions
                         </a>
                     </div>
+                </div>
+            </footer>
+
+            <!-- Tablet/Mobile Footer -->
+            <footer class="mobile-footer hide-on-pc">
+                <div class="footer__inner">
+                    <img
+                        src="./assets/icon/emoji.png"
+                        alt=""
+                        class="footer-emoji"
+                    />
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Projects</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Journey</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Service</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright__link">
+                        <a href="#!" class="copyright__policy"
+                            >Privacy Policy
+                        </a>
+                        <a href="#!" class="copyright__term"
+                            >Terms of Conditions
+                        </a>
+                    </div>
+                    <p class="copyright__info">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
                 </div>
             </footer>
         </div>
