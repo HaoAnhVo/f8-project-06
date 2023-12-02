@@ -158,46 +158,48 @@
 
             <!-- Tablet/Mobile header -->
             <header class="mobile-header">
-                <input
-                    type="checkbox"
-                    name=""
-                    id="menu-checkbox"
-                    class="menu-checkbox"
-                    hidden
-                />
-                <!-- Overlay -->
-                <label for="menu-checkbox" class="menu-overlay"></label>
+                <div class="header__inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="menu-checkbox"
+                        class="menu-checkbox"
+                        hidden
+                    />
+                    <!-- Overlay -->
+                    <label for="menu-checkbox" class="menu-overlay"></label>
 
-                <!-- Menu content -->
-                <div class="menu-drawer hide-on-pc">
-                    <!-- Mail to us -->
-                    <div class="email-mobile">
-                        <img src="./assets/icon/email-box.svg" alt="" />
-                        <p>
-                            <a
-                                href="mailto:hi@arif.interactive"
-                                class="email-link-mobile"
-                                >hi@arif.interactive
-                            </a>
-                        </p>
+                    <!-- Menu content -->
+                    <div class="menu-drawer hide-on-pc">
+                        <!-- Mail to us -->
+                        <div class="email-mobile">
+                            <img src="./assets/icon/email-box.svg" alt="" />
+                            <p>
+                                <a
+                                    href="mailto:hi@arif.interactive"
+                                    class="email-link-mobile"
+                                    >hi@arif.interactive
+                                </a>
+                            </p>
+                        </div>
+                        <!-- Navbar -->
+                        <nav>
+                            <ul>
+                                <li class="navbar__item">
+                                    <a href="#!">Projects</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!">Journey</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!">Service</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <!-- Navbar -->
-                    <nav>
-                        <ul>
-                            <li class="navbar__item">
-                                <a href="#!">Projects</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!">Journey</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!">Service</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </header>
 
@@ -378,21 +380,21 @@
                                     <input
                                         type="radio"
                                         name="dot"
-                                        id="dot-1"
-                                        class="dot-1"
+                                        id="work__dot-1"
+                                        class="work__dot-1"
                                         checked
                                     />
                                     <input
                                         type="radio"
                                         name="dot"
-                                        id="dot-2"
-                                        class="dot-2"
+                                        id="work__dot-2"
+                                        class="work__dot-2"
                                     />
                                     <input
                                         type="radio"
                                         name="dot"
-                                        id="dot-3"
-                                        class="dot-3"
+                                        id="work__dot-3"
+                                        class="work__dot-3"
                                     />
                                     <article class="work__item">
                                         <a href="#!" class="work__item-link">
@@ -452,11 +454,20 @@
                                     ></div>
                                 </div>
                                 <div class="feedback__dots hide-on-pc">
-                                    <label for="dot-1" class="feedback__dot">
+                                    <label
+                                        for="work__dot-1"
+                                        class="feedback__dot"
+                                    >
                                     </label>
-                                    <label for="dot-2" class="feedback__dot">
+                                    <label
+                                        for="work__dot-2"
+                                        class="feedback__dot"
+                                    >
                                     </label>
-                                    <label for="dot-3" class="feedback__dot">
+                                    <label
+                                        for="work__dot-3"
+                                        class="feedback__dot"
+                                    >
                                     </label>
                                 </div>
                             </div>
@@ -589,7 +600,7 @@
                 <!-- About Us -->
                 <section class="about">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12">
                             <section class="about__inner">
                                 <div class="about__staff">
                                     <p class="about__staff-info">
@@ -613,29 +624,39 @@
                         </div>
                     </div>
 
-                    <div class="about__list">
-                        <div class="about__item">
-                            <div class="about__experience">
-                                <p class="about__experience-number">08+</p>
-                                <p class="about__experience-desc">
-                                    Years Experience
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about__item">
-                            <div class="about__experience">
-                                <p class="about__experience-number">21+</p>
-                                <p class="about__experience-desc">
-                                    Features & Awards
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about__item">
-                            <div class="about__experience">
-                                <p class="about__experience-number">97%</p>
-                                <p class="about__experience-desc">
-                                    Clients Rating
-                                </p>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="about__list">
+                                <div class="about__item">
+                                    <div class="about__experience">
+                                        <p class="about__experience-number">
+                                            08+
+                                        </p>
+                                        <p class="about__experience-desc">
+                                            Years Experience
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__experience">
+                                        <p class="about__experience-number">
+                                            21+
+                                        </p>
+                                        <p class="about__experience-desc">
+                                            Features & Awards
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__experience">
+                                        <p class="about__experience-number">
+                                            97%
+                                        </p>
+                                        <p class="about__experience-desc">
+                                            Clients Rating
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
